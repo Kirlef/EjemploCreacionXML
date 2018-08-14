@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creacionarchivoxml.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="318.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creacionarchivoxml.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Button fx:id="btnAgregar" layoutX="29.0" layoutY="252.0" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="128.0" text="Agregar Estudiante" />
+      <TextField fx:id="nombret" layoutX="86.0" layoutY="57.0" />
+      <TextField fx:id="codigot" layoutX="86.0" layoutY="88.0" />
+      <Text layoutX="27.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AGREGAR ESTUDIANTES">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="nombretxt" layoutX="17.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <Text fx:id="telefonotxt" layoutX="19.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono" />
+      <TextField fx:id="carrerat" layoutX="86.0" layoutY="125.0" />
+      <TextField fx:id="telefonot" layoutX="86.0" layoutY="163.0" />
+      <TextField fx:id="correot" layoutX="86.0" layoutY="202.0" />
+      <Text fx:id="carreratxt" layoutX="22.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrera" />
+      <Text fx:id="codigotxt" layoutX="19.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo" />
+      <Text fx:id="correotxt" layoutX="22.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo" />
+      <Button fx:id="btnGuardar" layoutX="171.0" layoutY="252.0" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="128.0" text="Guardar ArchivoXML" />
     </children>
 </AnchorPane>
